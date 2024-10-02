@@ -15,6 +15,10 @@
         body {
             font-family: 'Roboto', sans-serif;
             background-color: #F3F4F6;
+            background-image: url('https://i.postimg.cc/JzB4PtqF/mic-doodle.png');
+            background-size: contain;
+            background-repeat: repeat-y;
+            background-position: center;
             color: #333;
             display: flex;
             flex-direction: column;
@@ -99,7 +103,27 @@
             margin: 20px auto;
             height: 200px;
             width: 200px;
-            border: 10px dashed #333;
+            border-radius: 50%;
+            border: 10px solid #1DB954;
+            object-fit: cover;
+        }
+
+        /* About the Podcast Section */
+        .about-section {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            text-align: center;
+            width: 100%;
+            max-width: 600px;
+        }
+
+        .about-section p {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #555;
         }
     </style>
 </head>
@@ -110,11 +134,17 @@
     
     <img src="https://i.postimg.cc/NMHYzHj7/694540e8-2fd6-4a24-9f78-6622dfa2686b.jpg" alt="Spotify Image">
 
+    <!-- About the Podcast Section -->
+    <div class="about-section">
+        <h2>About the Podcast</h2>
+        <p>Welcome to the <b>Pesum Monkey Podcast</b>—a show that explores exciting stories, fun experiences, and insightful conversations. Join us as we delve into a variety of topics that are sure to keep you entertained and informed!</p>
+    </div>
+
    <!-- Previous Episodes Section -->
     <div class="episode-list">
         <h2>Previous Episodes</h2>
         <ul>
-            <li><a href="https://open.spotify.com/episode/3wFKvhfEjnzk77x0yrnBqW?si=OSccywX9Rx-wQ-5NZt2FRw">Episode 1:Nee thinam siricha pothume</a></li>
+            <li><a href="https://open.spotify.com/episode/3wFKvhfEjnzk77x0yrnBqW?si=OSccywX9Rx-wQ-5NZt2FRw">Episode 1: Nee thinam siricha pothume</a></li>
             <li><a href="https://open.spotify.com/episode/1nhmpPc8FduCHOAc5Qs14V?si=ayTRq08nQdaq3Qqc6auwqw">Episode 2: Stranger Things </a></li>
         </ul>
     </div>
