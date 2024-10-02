@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Follow me on Spotify</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #F3F4F6;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 1rem;
+            color: #1DB954;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            text-align: center;
+            color: #333;
+        }
+
+        p {
+            font-size: 1rem;
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .spotify-button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 1rem;
+            font-weight: 700;
+            color: #fff;
+            background-color: #1DB954;
+            border: none;
+            border-radius: 50px;
+            text-align: center;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+            cursor: pointer;
+        }
+
+        .spotify-button:hover {
+            background-color: #18ac47;
+        }
+
+        .episode-list {
+            margin: 20px 0;
+            width: 100%;
+            max-width: 600px;
+        }
+
+        .episode-list ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .episode-list li {
+            font-size: 1rem;
+            margin-bottom: 0.8rem;
+            padding: 10px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .episode-list a {
+            color: #1DB954;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .episode-list a:hover {
+            text-decoration: underline;
+        }
+
+        img {
+            display: block;
+            margin: 20px auto;
+            height: 200px;
+            width: 200px;
+            border: 10px dashed #333;
+        }
+    </style>
+</head>
+<body>
+
+    <h1><b>Follow me on Spotify :)</b></h1>
+    <a href="https://open.spotify.com/show/23BcZeit3xEsB7DCcL96ua?si=9a8e62e1b6b04f53" class="spotify-button">Follow Me</a>
+    
+    <img src="pt.jpg" alt="Spotify Image">
+
+    <!-- Previous Episodes Section -->
+    <div class="episode-list">
+        <h2>Previous Episodes</h2>
+        <ul>
+            <li><a href="https://spotify-link-to-episode1.com">Episode 1: The Beginning</a></li>
+            <li><a href="https://spotify-link-to-episode2.com">Episode 2: The Next Chapter</a></li>
+            <li><a href="https://spotify-link-to-episode3.com">Episode 3: The Adventure Continues</a></li>
+        </ul>
+    </div>
+
+    <!-- Upcoming Episodes Section -->
+    <div class="episode-list">
+        <h2>Upcoming Episodes</h2>
+        <ul>
+            <li>Episode 4: Coming Soon...</li>
+            <li>Episode 5: Coming Soon...</li>
+        </ul>
+    </div>
+
+</body>
+</html>
