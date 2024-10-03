@@ -1,155 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Follow me on Spotify</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Follow me on Spotify :)</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-        body {
-            font-family: 'Roboto', sans-serif;
-            background-color: #F3F4F6;
-            color: #333;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
-            padding: 20px;
-        }
+    body {
+      font-family: 'Roboto', sans-serif;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
 
-        h1 {
-            font-size: 2.5rem;
-            font-weight: 700;
-            text-align: center;
-            margin-bottom: 1rem;
-            color: #1DB954;
-        }
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 1rem;
+      color: #1DB954;
+    }
 
-        h2 {
-            font-size: 1.8rem;
-            margin-bottom: 1rem;
-            text-align: center;
-            color: #333;
-        }
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      text-align: center;
+      color: #333;
+    }
 
-        p {
-            font-size: 1rem;
-            text-align: center;
-            margin-bottom: 1.5rem;
-        }
+    p {
+      font-size: 1rem;
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
 
-        .spotify-button {
-            display: inline-block;
-            padding: 10px 20px;
-            font-size: 1rem;
-            font-weight: 700;
-            color: #fff;
-            background-color: #1DB954;
-            border: none;
-            border-radius: 50px;
-            text-align: center;
-            text-decoration: none;
-            transition: background-color 0.3s ease;
-            cursor: pointer;
-        }
+    .spotify-button {
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 1rem;
+      font-weight: 700;
+      color: #fff;
+      background-color: #1DB954;
+      border: none;
+      border-radius: 50px;
+      text-align: center;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+      cursor: pointer;
+    }
 
-        .spotify-button:hover {
-            background-color: #18ac47;
-        }
+    .spotify-button:hover {
+      background-color: #18ac47;
+    }
 
-        .episode-list {
-            margin: 20px 0;
-            width: 100%;
-            max-width: 600px;
-        }
+    .episode-list {
+      margin: 20px 0;
+      width: 100%;
+      max-width: 600px;
+    }
 
-        .episode-list ul {
-            list-style: none;
-            padding: 0;
-        }
+    .episode-list ul {
+      list-style: none;
+      padding: 0;
+    }
 
-        .episode-list li {
-            font-size: 1rem;
-            margin-bottom: 0.8rem;
-            padding: 10px;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
+    .episode-list li {
+      font-size: 1rem;
+      margin-bottom: 0.8rem;
+      padding: 10px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
 
-        .episode-list a {
-            color: #1DB954;
-            text-decoration: none;
-            font-weight: 500;
-        }
+    .episode-list a {
+      color: #1DB954;
+      text-decoration: none;
+      font-weight: 500;
+    }
 
-        .episode-list a:hover {
-            text-decoration: underline;
-        }
+    .episode-list a:hover {
+      text-decoration: underline;
+    }
 
-        img {
-            display: block;
-            margin: 20px auto;
-            height: 200px;
-            width: 200px;
-            border-radius: 50%; /* Makes the image round */
-            border: 5px solid #333; /* Adds a solid border */
-        }
+    img {
+      display: block;
+      margin: 20px auto;
+      height: 200px;
+      width: 200px;
+      border-radius: 50%;
+      border: 5px solid #333;
+    }
 
-        /* About Section */
-        .about-section {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            margin-bottom: 20px;
-            max-width: 600px;
-            text-align: center;
-        }
+    /* About Section */
+    .about-section {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+      max-width: 600px;
+      text-align: center;
+    }
 
-        .about-section p {
-            font-size: 1rem;
-            line-height: 1.6;
-            color: #555;
-        }
-    </style>
+    .about-section p {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #555;
+    }
+
+    /* Background Image Animation */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url("https://wallpaperaccess.com/full/4061949.jpg"); /* Replace with your desired background image URL */
+      background-size: cover;
+      background-position: center;
+      opacity: 0.7; /* Adjust opacity as needed */
+      z-index: -1;
+    }
+
+    /* Feedback Section */
+    .feedback-section {
+      margin-top: 20px;
+      width: 100%;
+      max-width: 600px;
+    }
+
+    .feedback-form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .feedback-input {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-bottom: 10px;
+      width: 100%;
+    }
+
+    .feedback-button {
+      padding: 10px 20px;
+      background-color: #1DB954;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .feedback-message {
+      text-align: center;
+      margin-top: 10px;
+    }
+  </style>
 </head>
 <body>
 
-    <h1><b>Follow me on Spotify :)</b></h1>
-    <a href="https://open.spotify.com/show/23BcZeit3xEsB7DCcL96ua?si=9a8e62e1b6b04f53" class="spotify-button">Follow Me</a>
-    
-    <img src="https://i.postimg.cc/NMHYzHj7/694540e8-2fd6-4a24-9f78-6622dfa2686b.jpg" alt="Spotify Image">
+  <h1><b>Follow me on Spotify :)</b></h1>
+  <a href="https://open.spotify.com/show/23BcZeit3xEsB7DCcL96ua?si=9a8e62e1b6b04f53" class="spotify-button">Follow Me</a>
 
-    <!-- About the Podcast Section -->
-    <div class="about-section">
-        <h2>About the Podcast</h2>
-        <p>Welcome to <b>Pesum Monkey</b>, where we dive into exciting stories, fun facts, and engaging conversations. Whether you're commuting, working out, or just relaxing, tune in for a great time with us!</p>
-    </div>
+  <img src="https://i.postimg.cc/NMHYzHj7/694540e8-2fd6-4a24-9f78-6622dfa2686b.jpg" alt="Spotify Image">
 
-    <!-- Previous Episodes Section -->
-    <div class="episode-list">
-        <h2>Previous Episodes</h2>
-        <ul>
-            <li><a href="https://open.spotify.com/episode/3wFKvhfEjnzk77x0yrnBqW?si=OSccywX9Rx-wQ-5NZt2FRw">Episode 1: Nee thinam siricha pothume</a></li>
-            <li><a href="https://open.spotify.com/episode/1nhmpPc8FduCHOAc5Qs14V?si=ayTRq08nQdaq3Qqc6auwqw">Episode 2: Stranger Things</a></li>
-        </ul>
-    </div>
+  <div class="about-section">
+    <h2>About the Podcast</h2>
+    <p>Welcome to <b>Pesum Monkey</b>, where we dive into exciting stories, fun facts, and engaging conversations. Whether you're commuting, working out, or just relaxing, tune in for a great time with us!</p>
+  </div>
 
-    <!-- Upcoming Episodes Section -->
-    <div class="episode-list">
-        <h2>Upcoming Episodes</h2>
-        <ul>
-            <li>Episode 3: Acceptance    Coming Soon...</li>
-        </ul>
-    </div>
+  <div class="episode-list">
+    <h2>Previous Episodes</h2>
+    <ul>
+      <li><a href="https://open.spotify.com/episode/3wFKvhfEjnzk77x0yrnBqW?si=OSccywX9Rx-wQ-5NZt2FRw">Episode 1: Nee thinam siricha pothume</a></li>
+      <li><a href="https://open.spotify.com/episode/1nhmpPc8FduCHOAc5Qs14V?si=ayTRq08nQdaq3Qqc6auwqw">Episode 2: Stranger Things</a></li>
+    </ul>
+  </div>
+
+  <div class="episode-list">
+    <h2>Upcoming Episodes</h2>
+    <ul>
+      <li>Episode 3: Acceptance    Coming Soon...</li>
+    </ul>
+  </div>
+
+  <div class="feedback-section">
+    <h2>Give Feedback</h2>
+    <form class="feedback-form">
+      <textarea class="feedback-input" placeholder="Share your thoughts here..."></textarea>
+      <button class="feedback-button">Submit Feedback</button>
+    </form>
+    <div class="feedback-message">Thank you for your feedback!</div>
+  </div>
 
 </body>
 </html>
